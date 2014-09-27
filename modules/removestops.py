@@ -51,7 +51,7 @@ matrix_without_stops( ['A', 'A', 'A', 'A', 'A', 'A', 'T', 'G', 'A', 'A', 'A', 'A
     matrix_without_stops = np.delete(matrix,seqs_to_delete,0)
     return (matrix_without_stops,ID)
     
-def _remove_stops2(matrix,codontable_number):
+def _remove_stops2(matrix,codontable_number,ID,stops):
     """
 
 This function removes the columns that correspond to stop codons in a  nucleotide matrix.
